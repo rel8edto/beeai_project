@@ -1,0 +1,3080 @@
+{
+  "id": 248238342,
+  "kind": "Company",
+  "name": "OneRep",
+  "corporationType": "LLC",
+  "statusDetail": "ACTIVE",
+  "established": "2018-10-03",
+  "addresses": [
+    {
+      "id": 860654482,
+      "type": "Physical",
+      "isResidential": false,
+      "kind": "Address",
+      "alerts": [],
+      "buildings": [],
+      "relations": [],
+      "Zip": "22102",
+      "country": "US",
+      "Street_Number": "1750",
+      "county": "Fairfax County",
+      "Census_Year": "2020",
+      "relType": "LOCATED_IN",
+      "zip4": "",
+      "Latitude": "38.923782",
+      "country_alpha3": "USA",
+      "source": "website",
+      "uuid": "e381f42b-3edd-40a2-9941-5824e70faafd",
+      "geoConficence": 0.9,
+      "geoType": "Street Interpolated",
+      "Census_Block_Code": "2003",
+      "longitude": "-77.1943",
+      "Census_Tract_Code": "480202",
+      "Unit_Number": "1500",
+      "Street_Name": "Tysons Blvd",
+      "country_english": "United States of America (the)",
+      "Unit_Type": "Ste",
+      "City": "Mc Lean",
+      "Longitude": "-77.222633",
+      "labels": [
+        "Address"
+      ],
+      "placekey": "226@63r-6m5-fvf",
+      "State": "VA",
+      "Country": "US",
+      "postal": "22102",
+      "Place_FIPS": "5179950",
+      "standardcity": "McLean",
+      "region": "VA",
+      "State_FIPS": "51",
+      "standardregion": "Virginia",
+      "flag": "verified",
+      "city": "Mclean",
+      "latitude": "38.9436",
+      "County": "Fairfax County",
+      "Census_Block_Group": "2",
+      "country_french": "\u00c9tats-Unis d'Am\u00e9rique (les)",
+      "Source": "Fairfax",
+      "Accuracy_Score": "1",
+      "identity": {
+        "low": 860654482,
+        "high": 0
+      },
+      "County_FIPS": "51059",
+      "Place_Name": "Tysons",
+      "Address_Line": "Ste 1500, 1750 Tysons Blvd",
+      "confidence": 0.9,
+      "Accuracy_Type": "rooftop",
+      "addressLine": "1750 Tysons Blvd. Suite 1500",
+      "uuid_history": [
+        "5bd9913a-3c61-4179-b3ba-ed16c05b36ae",
+        "fe16c459-e265-4a71-9b5e-72af3bdc0a07"
+      ],
+      "Full_FIPS": "510594802022003",
+      "location": {
+        "srid": {
+          "low": 4326,
+          "high": 0
+        },
+        "x": -77.2101036,
+        "y": 38.9245311
+      },
+      "updatetime": {
+        "low": -1505434044,
+        "high": 385
+      },
+      "elements": [
+        {
+          "code": "22202",
+          "identity": {
+            "low": 96856,
+            "high": 0
+          },
+          "latitude": "38.859829",
+          "relType": "LOCATED_IN",
+          "labels": [
+            "Postal"
+          ],
+          "longitude": "-77.053278"
+        }
+      ],
+      "match": {
+        "addressLineLev": 0,
+        "city": 0
+      },
+      "mergedIds": [
+        163184811,
+        173082656
+      ],
+      "suppress": false
+    },
+    {
+      "id": 163184811,
+      "type": "Physical",
+      "isResidential": false,
+      "kind": "Address",
+      "alerts": [],
+      "buildings": [],
+      "relations": [],
+      "Zip": "22102",
+      "country": "US",
+      "Street_Number": "1750",
+      "county": "Fairfax County",
+      "Census_Year": "2019",
+      "relType": "LOCATED_IN",
+      "Latitude": "38.923782",
+      "country_alpha3": "USA",
+      "uuid": "f8cb702d-07fa-4ab0-afac-c4bec34c1d0c",
+      "Census_Block_Code": "2003",
+      "longitude": "-77.222633",
+      "Census_Tract_Code": "480202",
+      "Unit_Number": "1500",
+      "Street_Name": "Tysons Blvd",
+      "country_english": "United States of America (the)",
+      "Unit_Type": "Ste",
+      "City": "Mc Lean",
+      "Longitude": "-77.222633",
+      "labels": [
+        "Address"
+      ],
+      "placekey": "232@63r-6m5-gkz",
+      "State": "VA",
+      "Country": "US",
+      "postal": "22102",
+      "standardcity": "Tysons",
+      "Place_FIPS": "5179950",
+      "region": "VA",
+      "State_FIPS": "51",
+      "standardregion": "Virginia",
+      "city": "Mc Lean",
+      "latitude": "38.923782",
+      "County": "Fairfax County",
+      "country_french": "\u00c9tats-Unis d'Am\u00e9rique (les)",
+      "Census_Block_Group": "2",
+      "Source": "Fairfax",
+      "Accuracy_Score": "1",
+      "identity": {
+        "low": 163184811,
+        "high": 0
+      },
+      "County_FIPS": "51059",
+      "Place_Name": "Tysons",
+      "Address_Line": "Ste 1500, 1750 Tysons Blvd",
+      "Accuracy_Type": "rooftop",
+      "addressLine": "1750 Tysons Blvd Suite 1500 Suite 900",
+      "Full_FIPS": "510594802022003",
+      "location": {
+        "srid": {
+          "low": 4326,
+          "high": 0
+        },
+        "x": -77.222633,
+        "y": 38.923782
+      },
+      "updatetime": {
+        "low": 1668076268,
+        "high": 390
+      },
+      "elements": [
+        {
+          "code": "22102",
+          "identity": {
+            "low": 185231,
+            "high": 0
+          },
+          "latitude": "38.959942",
+          "relType": "LOCATED_IN",
+          "labels": [
+            "Postal"
+          ],
+          "longitude": "-77.224902"
+        }
+      ],
+      "match": {
+        "addressLineLev": 0,
+        "city": 0
+      },
+      "suppress": true
+    },
+    {
+      "id": 173082656,
+      "type": "Physical",
+      "isResidential": false,
+      "kind": "Address",
+      "alerts": [],
+      "buildings": [],
+      "relations": [],
+      "Zip": "22102",
+      "country": "US",
+      "Street_Number": "1750",
+      "county": "Fairfax County",
+      "Census_Year": "2019",
+      "relType": "LOCATED_IN",
+      "Latitude": "38.923782",
+      "country_alpha3": "USA",
+      "uuid": "d9f429a2-dabf-4e26-baff-7c9f45f88153",
+      "geoType": "Rooftop",
+      "Census_Block_Code": "2003",
+      "longitude": "-77.222633",
+      "Census_Tract_Code": "480202",
+      "Street_Name": "Tysons Blvd",
+      "country_english": "United States of America (the)",
+      "City": "Mc Lean",
+      "Longitude": "-77.222633",
+      "labels": [
+        "Address"
+      ],
+      "placekey": "222@63r-6m5-gkz",
+      "State": "VA",
+      "Country": "US",
+      "postal": "22102",
+      "standardcity": "Tysons",
+      "Place_FIPS": "5179950",
+      "region": "VA",
+      "State_FIPS": "51",
+      "standardregion": "Virginia",
+      "city": "Tysons Corner",
+      "latitude": "38.923782",
+      "County": "Fairfax County",
+      "country_french": "\u00c9tats-Unis d'Am\u00e9rique (les)",
+      "Census_Block_Group": "2",
+      "Source": "Fairfax",
+      "Accuracy_Score": "1",
+      "identity": {
+        "low": 173082656,
+        "high": 0
+      },
+      "County_FIPS": "51059",
+      "Place_Name": "Tysons",
+      "Address_Line": "1750 Tysons Blvd",
+      "confidence": 0.9,
+      "Accuracy_Type": "rooftop",
+      "addressLine": "1750 Tysons Blvd",
+      "uuid_history": [
+        "b339293e-eaee-4493-8fb7-621b7a08fc16"
+      ],
+      "Full_FIPS": "510594802022003",
+      "location": {
+        "srid": {
+          "low": 4326,
+          "high": 0
+        },
+        "x": -77.239268,
+        "y": 38.905334
+      },
+      "updatetime": {
+        "low": 1723827893,
+        "high": 390
+      },
+      "elements": [
+        {
+          "code": "22102",
+          "identity": {
+            "low": 185231,
+            "high": 0
+          },
+          "latitude": "38.959942",
+          "relType": "LOCATED_IN",
+          "labels": [
+            "Postal"
+          ],
+          "longitude": "-77.224902"
+        }
+      ],
+      "match": {
+        "addressLineLev": 0,
+        "city": 0
+      },
+      "suppress": true
+    },
+    {
+      "id": 1369005055,
+      "type": "Physical",
+      "isResidential": false,
+      "kind": "Address",
+      "alerts": [],
+      "buildings": [],
+      "relations": [],
+      "country": "US",
+      "standardregion": "New York",
+      "city": "New York",
+      "identity": {
+        "low": 1369005055,
+        "high": 0
+      },
+      "relType": "LOCATED_IN",
+      "addressLine": "No Address Line Given",
+      "region": "NY",
+      "standardcity": "New York",
+      "uuid": "0fe030c5-8797-4153-99c0-643d5ccce4c7",
+      "labels": [
+        "Address"
+      ],
+      "match": {
+        "addressLineLev": 0,
+        "city": 0
+      },
+      "suppress": false
+    },
+    {
+      "id": 860820996,
+      "type": "Physical",
+      "isResidential": false,
+      "kind": "Address",
+      "alerts": [],
+      "buildings": [],
+      "relations": [],
+      "temporary": "yes",
+      "city": "",
+      "identity": {
+        "low": 860820996,
+        "high": 0
+      },
+      "relType": "LOCATED_IN",
+      "region": "",
+      "addressLine": "164,68 Million, Sensitive Records Were Stolen in the United States in 2019.",
+      "uuid": "d811f3c9-a92c-4114-aef9-ad525527efd4",
+      "labels": [
+        "Address"
+      ],
+      "match": {
+        "addressLineLev": 0,
+        "city": 0
+      },
+      "suppress": false
+    }
+  ],
+  "directors": [
+    {
+      "id": 582887816,
+      "kind": "Person",
+      "type": "",
+      "name": "Anthony Stepanov",
+      "primaryName": {
+        "fullName": "Anthony Stepanov",
+        "firstName": "",
+        "middleName": "",
+        "lastName": "",
+        "suffix": "",
+        "dateFirstSeen": "",
+        "dateLastSeen": ""
+      },
+      "altNames": [],
+      "dateOfBirth": "",
+      "addresses": [],
+      "assets": [],
+      "certifications": [],
+      "grantapplications": [],
+      "activities": [],
+      "designations": [],
+      "contactmethods": [],
+      "metrics": [],
+      "identifiers": [],
+      "alerts": [],
+      "relations": [],
+      "relatedPersons": [],
+      "employers": [],
+      "buildings": [],
+      "locations": [],
+      "cases": [],
+      "lastName": "Stepanov",
+      "firstName": "Anthony",
+      "identity": {
+        "low": 582887816,
+        "high": 0
+      },
+      "relType": "DIRECTED_BY",
+      "middleName": "",
+      "uuid": "54777f3b-a054-4ff2-b644-6527c69f0110",
+      "genderStatus": "modeled",
+      "labels": [
+        "Person"
+      ]
+    }
+  ],
+  "employees": [],
+  "names": [
+    {
+      "id": 355775212,
+      "name": "OneRep",
+      "pii": "false",
+      "identity": {
+        "low": 355775212,
+        "high": 0
+      },
+      "displayName": "Onerep",
+      "relType": "NAMED",
+      "piiScore": 0,
+      "labels": [
+        "CorpName"
+      ],
+      "match": {
+        "lev": 1
+      },
+      "suppress": false,
+      "mergedIds": [
+        658258146,
+        860820995
+      ]
+    },
+    {
+      "id": 248229885,
+      "name": "Onerep Llc",
+      "pii": "false",
+      "identity": {
+        "low": 248229885,
+        "high": 0
+      },
+      "relType": "NAMED",
+      "piiScore": 0,
+      "labels": [
+        "CorpName"
+      ],
+      "match": {
+        "lev": 1
+      },
+      "suppress": false
+    }
+  ],
+  "identifiers": [
+    {
+      "id": 355828728,
+      "name": "db84e75f-4ae8-6560-f186-79a5b79fefb4",
+      "type": null,
+      "subtype": null,
+      "kind": "ID",
+      "alerts": [],
+      "relations": [],
+      "businessNumbers": [],
+      "idKey": "db84e75f-4ae8-6560-f186-79a5b79fefb4CRUNCHBASE",
+      "identity": {
+        "low": 355828728,
+        "high": 0
+      },
+      "authority": "Crunchbase",
+      "relType": "IDENT",
+      "labels": [
+        "ID"
+      ]
+    },
+    {
+      "id": 23350360,
+      "name": "S7798996",
+      "type": null,
+      "subtype": null,
+      "kind": "ID",
+      "alerts": [],
+      "relations": [],
+      "businessNumbers": [],
+      "idKey": "S7798996VADOS",
+      "identity": {
+        "low": 23350360,
+        "high": 0
+      },
+      "relType": "IDENT",
+      "labels": [
+        "ID"
+      ],
+      "elements": [
+        {
+          "level": "Provincial",
+          "identity": {
+            "low": 125256737,
+            "high": 0
+          },
+          "name": "Virginia State",
+          "relType": "AUTH",
+          "labels": [
+            "Authority"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 248238059,
+      "name": "S779899",
+      "type": null,
+      "subtype": null,
+      "kind": "ID",
+      "alerts": [],
+      "relations": [],
+      "businessNumbers": [],
+      "idKey": "S779899VADOS",
+      "level": "Provincial",
+      "identity": {
+        "low": 248238059,
+        "high": 0
+      },
+      "authority": "Virginia State",
+      "relType": "IDENT",
+      "labels": [
+        "ID"
+      ],
+      "elements": [
+        {
+          "level": "Provincial",
+          "identity": {
+            "low": 125256737,
+            "high": 0
+          },
+          "name": "Virginia State",
+          "relType": "AUTH",
+          "labels": [
+            "Authority"
+          ]
+        }
+      ]
+    }
+  ],
+  "categories": [
+    {
+      "kind": "Category",
+      "categoryType": "NAICS2017",
+      "code": "541511",
+      "name": "Custom Computer Programming Services",
+      "labels": [
+        "Category"
+      ],
+      "elements": [
+        {
+          "method": "declared",
+          "importance": 10,
+          "source": "research",
+          "labels": [
+            "Unknown"
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "Category",
+      "categoryType": "NAICS2017",
+      "name_fr": "Conception de syst\u00e8mes informatiques et services connexes",
+      "code": "54151",
+      "name": "Computer systems design and related services",
+      "labels": [
+        "Category"
+      ],
+      "elements": [
+        {
+          "method": "declared",
+          "importance": 10,
+          "source": "research",
+          "labels": [
+            "Unknown"
+          ]
+        }
+      ]
+    },
+    {
+      "code": "54",
+      "categoryType": "group",
+      "category": "Professional and Business Services",
+      "name": "Professional, Scientific, and Technical Services",
+      "name_fr": ""
+    }
+  ],
+  "clusters": [
+    {
+      "name": "Banking and Financial Services",
+      "labels": [
+        "ClusterType"
+      ],
+      "clusterClass": "IDC"
+    },
+    {
+      "name": "Banking",
+      "labels": [
+        "ClusterType"
+      ],
+      "clusterClass": "IDC"
+    },
+    {
+      "name": "Education",
+      "labels": [
+        "ClusterType"
+      ],
+      "clusterClass": "IDC"
+    },
+    {
+      "name": "Media",
+      "labels": [
+        "ClusterType"
+      ],
+      "clusterClass": "IDC"
+    },
+    {
+      "name": "Communications and Media",
+      "labels": [
+        "ClusterType"
+      ],
+      "clusterClass": "IDC"
+    }
+  ],
+  "certifications": [
+    {
+      "certificationType": "Unknown",
+      "identity": {
+        "low": 1086723755,
+        "high": 0
+      },
+      "certificationNumber": {
+        "low": 248238342,
+        "high": 0
+      },
+      "relType": "CERT",
+      "labels": [
+        "Certification",
+        "TechnologyCert"
+      ],
+      "certifyingBody": "Microsoft",
+      "startDate": "Unavailable",
+      "endDate": "Unavailable"
+    },
+    {
+      "certificationType": "Unknown",
+      "identity": {
+        "low": -1967532940,
+        "high": 0
+      },
+      "certificationNumber": {
+        "low": 248238342,
+        "high": 0
+      },
+      "relType": "CERT",
+      "labels": [
+        "Certification",
+        "TechnologyCert"
+      ],
+      "certifyingBody": "Deloitte",
+      "startDate": "Unavailable",
+      "endDate": "Unavailable"
+    },
+    {
+      "certificationType": "Unknown",
+      "identity": {
+        "low": 1484317865,
+        "high": 0
+      },
+      "certificationNumber": {
+        "low": 248238342,
+        "high": 0
+      },
+      "relType": "CERT",
+      "labels": [
+        "Certification",
+        "TechnologyCert"
+      ],
+      "certifyingBody": "Dropbox",
+      "startDate": "Unavailable",
+      "endDate": "Unavailable"
+    },
+    {
+      "certificationType": "Unknown",
+      "identity": {
+        "low": 1086723757,
+        "high": 0
+      },
+      "certificationNumber": {
+        "low": 248238342,
+        "high": 0
+      },
+      "relType": "CERT",
+      "labels": [
+        "Certification",
+        "TechnologyCert"
+      ],
+      "certifyingBody": "Intuit",
+      "startDate": "Unavailable",
+      "endDate": "Unavailable"
+    },
+    {
+      "certificationType": "Unknown",
+      "identity": {
+        "low": 1086723758,
+        "high": 0
+      },
+      "certificationNumber": {
+        "low": 248238342,
+        "high": 0
+      },
+      "relType": "CERT",
+      "labels": [
+        "Certification",
+        "TechnologyCert"
+      ],
+      "certifyingBody": "Experian",
+      "startDate": "Unavailable",
+      "endDate": "Unavailable"
+    },
+    {
+      "certificationType": "Unknown",
+      "identity": {
+        "low": 1086723756,
+        "high": 0
+      },
+      "certificationNumber": {
+        "low": 248238342,
+        "high": 0
+      },
+      "relType": "CERT",
+      "labels": [
+        "Certification",
+        "TechnologyCert"
+      ],
+      "certifyingBody": "NortonLifeLock",
+      "startDate": "Unavailable",
+      "endDate": "Unavailable"
+    }
+  ],
+  "grantapplications": [],
+  "memberships": [],
+  "contracts": [],
+  "licenses": [],
+  "activities": [
+    {
+      "kind": "Activity",
+      "identity": {
+        "low": 17541490,
+        "high": 0
+      },
+      "name": "Customer Relationship Management (CRM) Applications",
+      "relType": "PARTICIPATES_IN",
+      "labels": [
+        "Activity"
+      ],
+      "group": "Software",
+      "activityClass": "Applications"
+    },
+    {
+      "kind": "Activity",
+      "identity": {
+        "low": 259895895,
+        "high": 0
+      },
+      "name": "Other Cloud: Hybrid/Private/On-prem virtualization",
+      "relType": "PARTICIPATES_IN",
+      "labels": [
+        "Activity"
+      ],
+      "group": "Cloud",
+      "activityClass": "Cloud"
+    },
+    {
+      "kind": "Activity",
+      "identity": {
+        "low": 259808720,
+        "high": 0
+      },
+      "name": "Artificial Intelligence Systems",
+      "relType": "PARTICIPATES_IN",
+      "labels": [
+        "Activity"
+      ],
+      "group": "3rd Platform",
+      "activityClass": "Innovation Accelerators"
+    },
+    {
+      "kind": "Activity",
+      "identity": {
+        "low": 259847927,
+        "high": 0
+      },
+      "name": "Big Data and Analytics",
+      "relType": "PARTICIPATES_IN",
+      "labels": [
+        "Activity"
+      ],
+      "group": "3rd Platform",
+      "activityClass": "Pillars"
+    },
+    {
+      "kind": "Activity",
+      "identity": {
+        "low": 293098386,
+        "high": 0
+      },
+      "name": "IT Outsourcing",
+      "relType": "PARTICIPATES_IN",
+      "labels": [
+        "Activity"
+      ],
+      "group": "Services",
+      "activityClass": "Managed Services"
+    },
+    {
+      "kind": "Activity",
+      "identity": {
+        "low": 32285177,
+        "high": 0
+      },
+      "name": "SaaS",
+      "relType": "PARTICIPATES_IN",
+      "labels": [
+        "Activity"
+      ],
+      "group": "Cloud",
+      "activityClass": "Cloud"
+    },
+    {
+      "kind": "Activity",
+      "identity": {
+        "low": 1034788144,
+        "high": 0
+      },
+      "name": "IoT",
+      "relType": "PARTICIPATES_IN",
+      "labels": [
+        "Activity"
+      ]
+    }
+  ],
+  "designations": [],
+  "ratings": [],
+  "metrics": [
+    {
+      "identity": {
+        "low": 712943227,
+        "high": 0
+      },
+      "name": "employees",
+      "description": "20 - 49",
+      "relType": "ATTRIBUTED_BY",
+      "source": "sales model",
+      "time": {
+        "low": 1038947772,
+        "high": 375
+      },
+      "uuid": "54d9177c-bce8-4bf8-83cb-b356a89cb29e",
+      "labels": [
+        "Metric"
+      ]
+    },
+    {
+      "identity": {
+        "low": 714662809,
+        "high": 0
+      },
+      "name": "sales",
+      "description": "2,500,000 - 4,999,999",
+      "relType": "ATTRIBUTED_BY",
+      "source": "sales model",
+      "time": {
+        "low": 1146780994,
+        "high": 375
+      },
+      "uuid": "8de22896-580c-403a-9bee-d9cddbf306e8",
+      "labels": [
+        "Metric"
+      ]
+    }
+  ],
+  "contactmethods": [
+    {
+      "id": 582887814,
+      "type": "Phone",
+      "value": "518-444-0630",
+      "alerts": [],
+      "kind": "ContactMethod",
+      "relations": [],
+      "identity": {
+        "low": 582887814,
+        "high": 0
+      },
+      "relType": "REACHED_AT",
+      "labels": [
+        "ContactInfo",
+        "Phone"
+      ]
+    },
+    {
+      "id": 425652427,
+      "type": "Crunchbase",
+      "value": "crunchbase.com/organization/onerep",
+      "alerts": [],
+      "kind": "ContactMethod",
+      "relations": [],
+      "identity": {
+        "low": 425652427,
+        "high": 0
+      },
+      "relType": "DESCRIBED_BY",
+      "labels": [
+        "ContactInfo",
+        "OnlineAccount"
+      ],
+      "elements": [
+        {
+          "identity": {
+            "low": 29848106,
+            "high": 0
+          },
+          "name": "crunchbase",
+          "relType": "PROVIDED_BY",
+          "labels": [
+            "ServiceProvider",
+            "OnlineAccountProvider"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 636765460,
+      "type": "Facebook",
+      "value": "facebook.com/OneRepCom/",
+      "alerts": [],
+      "kind": "ContactMethod",
+      "relations": [],
+      "identity": {
+        "low": 636765460,
+        "high": 0
+      },
+      "relType": "REACHED_AT",
+      "source": "onerep.com",
+      "labels": [
+        "ContactInfo",
+        "OnlineAccount"
+      ],
+      "elements": [
+        {
+          "identity": {
+            "low": 19873318,
+            "high": 0
+          },
+          "name": "facebook",
+          "relType": "PROVIDED_BY",
+          "labels": [
+            "ServiceProvider",
+            "OnlineAccountProvider"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 425652425,
+      "type": "Facebook",
+      "value": "facebook.com/onerepcom/",
+      "alerts": [],
+      "kind": "ContactMethod",
+      "relations": [],
+      "identity": {
+        "low": 425652425,
+        "high": 0
+      },
+      "relType": "DESCRIBED_BY",
+      "labels": [
+        "ContactInfo",
+        "OnlineAccount"
+      ],
+      "elements": [
+        {
+          "identity": {
+            "low": 19873318,
+            "high": 0
+          },
+          "name": "facebook",
+          "relType": "PROVIDED_BY",
+          "labels": [
+            "ServiceProvider",
+            "OnlineAccountProvider"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 860820999,
+      "type": "Twitter",
+      "value": "https://twitter.com/OneRepCom",
+      "alerts": [],
+      "kind": "ContactMethod",
+      "relations": [],
+      "identity": {
+        "low": 860820999,
+        "high": 0
+      },
+      "relType": "REACHED_AT",
+      "labels": [
+        "OnlineAccount"
+      ]
+    },
+    {
+      "id": 860820997,
+      "type": "Facebook",
+      "value": "https://www.facebook.com/OneRepCom/",
+      "alerts": [],
+      "kind": "ContactMethod",
+      "relations": [],
+      "identity": {
+        "low": 860820997,
+        "high": 0
+      },
+      "relType": "REACHED_AT",
+      "labels": [
+        "OnlineAccount"
+      ],
+      "elements": [
+        {
+          "identity": {
+            "low": 19873318,
+            "high": 0
+          },
+          "name": "facebook",
+          "relType": "PROVIDED_BY",
+          "labels": [
+            "ServiceProvider",
+            "OnlineAccountProvider"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 425652426,
+      "type": "LinkedIn",
+      "value": "linkedin.com/company/onerep/",
+      "alerts": [],
+      "kind": "ContactMethod",
+      "relations": [],
+      "identity": {
+        "low": 425652426,
+        "high": 0
+      },
+      "relType": "DESCRIBED_BY",
+      "labels": [
+        "ContactInfo",
+        "OnlineAccount"
+      ],
+      "elements": [
+        {
+          "identity": {
+            "low": 19834751,
+            "high": 0
+          },
+          "name": "linkedin",
+          "relType": "PROVIDED_BY",
+          "labels": [
+            "ServiceProvider",
+            "OnlineAccountProvider"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 355822683,
+      "type": "Website",
+      "value": "onerep.com",
+      "alerts": [],
+      "kind": "ContactMethod",
+      "relations": [],
+      "numPages": {
+        "low": 47,
+        "high": 0
+      },
+      "processes": "{\"KumihoEyeWebtag\":\"tesla\"}",
+      "identity": {
+        "low": 355822683,
+        "high": 0
+      },
+      "relType": "DESCRIBED_BY",
+      "tagtime": "2025-02-04",
+      "labels": [
+        "ContactInfo",
+        "Website"
+      ],
+      "status": "active",
+      "textVersion": "v1",
+      "statusCode": {
+        "low": 200,
+        "high": 0
+      },
+      "suppress": false
+    },
+    {
+      "id": 637040777,
+      "type": "Twitter",
+      "value": "twitter.com/OneRepCom",
+      "alerts": [],
+      "kind": "ContactMethod",
+      "relations": [],
+      "displayUrl": "onerep.com",
+      "identity": {
+        "low": 637040777,
+        "high": 0
+      },
+      "userScreenName": "OneRepCom",
+      "relType": "REACHED_AT",
+      "location": "United States",
+      "metrics": "{followers_count: 33, friends_count: 27, listed_count: 0, statuses_count: 567}",
+      "userName": "OneRep",
+      "userID": "823461472567197696",
+      "sinceDate": "2017-01-23",
+      "labels": [
+        "ContactInfo",
+        "OnlineAccount"
+      ],
+      "elements": [
+        {
+          "keywords": "onerepcom",
+          "activity": "",
+          "searchword": "onerepcom",
+          "postContent": "Being an influencer comes with serious risks Reputational damage fraud and identity theft concerns require taking https t co NTjCvMzUi8",
+          "identity": {
+            "low": 637040785,
+            "high": 0
+          },
+          "relType": "POSTED",
+          "favorite_count": {
+            "low": 0,
+            "high": 0
+          },
+          "postID": "1328510688864645121",
+          "time": "1605576605000",
+          "retweet_count": {
+            "low": 0,
+            "high": 0
+          },
+          "labels": [
+            "Post"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 355834218,
+      "type": "Twitter",
+      "value": "twitter.com/onerepcom",
+      "alerts": [],
+      "kind": "ContactMethod",
+      "relations": [],
+      "identity": {
+        "low": 355834218,
+        "high": 0
+      },
+      "relType": "DESCRIBED_BY",
+      "labels": [
+        "ContactInfo",
+        "OnlineAccount"
+      ],
+      "elements": [
+        {
+          "identity": {
+            "low": 19873319,
+            "high": 0
+          },
+          "name": "twitter",
+          "relType": "PROVIDED_BY",
+          "labels": [
+            "ServiceProvider",
+            "OnlineAccountProvider"
+          ]
+        }
+      ]
+    }
+  ],
+  "peoplecontacts": [],
+  "registryevents": [
+    {
+      "identity": {
+        "low": 1088623326,
+        "high": 0
+      },
+      "authority": "Virginia State",
+      "relType": "EVT",
+      "time": {
+        "low": 926508032,
+        "high": 358
+      },
+      "type": "Filing",
+      "labels": [
+        "Event",
+        "Info",
+        "Filing"
+      ],
+      "date": "2018-10-03",
+      "eventType": "Info"
+    },
+    {
+      "id": 1088623327,
+      "identity": {
+        "low": 1088623327,
+        "high": 0
+      },
+      "authority": "Virginia State",
+      "relType": "EVT",
+      "time": {
+        "low": 926508032,
+        "high": 358
+      },
+      "type": "Incorporation",
+      "labels": [
+        "Event",
+        "Incorporation",
+        "Start"
+      ],
+      "date": "2018-10-03",
+      "eventType": "Incorporation"
+    }
+  ],
+  "inspections": [],
+  "elements": [],
+  "alerts": [],
+  "sources": [
+    {
+      "ids": [
+        860654482
+      ],
+      "dates": [
+        "2025-06-17",
+        "2025-06-10",
+        "2025-05-27",
+        "2025-05-20",
+        "2025-05-13",
+        "2025-05-06",
+        "2025-04-29",
+        "2025-04-22",
+        "2025-04-15",
+        "2025-04-08",
+        "2025-03-25",
+        "2025-03-18",
+        "2025-03-11",
+        "2025-02-25",
+        "2025-02-18",
+        "2025-02-11",
+        "2025-02-04",
+        "2025-01-28",
+        "2025-01-21",
+        "2025-01-14",
+        "2025-01-07",
+        "2024-12-31",
+        "2024-12-24",
+        "2024-12-17",
+        "2024-12-10",
+        "2024-12-03",
+        "2024-11-26",
+        "2024-11-19",
+        "2024-11-12",
+        "2024-11-05",
+        "2024-10-29",
+        "2024-10-22",
+        "2024-10-15",
+        "2024-10-08",
+        "2024-10-01",
+        "2024-09-24",
+        "2024-09-17",
+        "2024-09-10",
+        "2024-09-03",
+        "2024-08-27",
+        "2024-08-20",
+        "2024-08-13",
+        "2024-07-30",
+        "2024-07-23",
+        "2024-07-02",
+        "2024-06-25",
+        "2024-05-21",
+        "2024-05-14",
+        "2024-05-07",
+        "2024-04-30",
+        "2024-04-23",
+        "2024-04-16",
+        "2024-04-01",
+        "2024-03-18",
+        "2024-03-04",
+        "2024-02-19",
+        "2024-02-06",
+        "2022-12-19",
+        "2022-11-21",
+        "2022-04-21"
+      ],
+      "product": "Registered Business Locations - San Francisco",
+      "license": "Open",
+      "service": "City of San Francisco",
+      "url": ""
+    },
+    {
+      "ids": [
+        173082656
+      ],
+      "dates": [
+        "2025-05-20",
+        "2025-04-20",
+        "2025-03-20",
+        "2025-01-16",
+        "2024-12-20",
+        "2023-09-25",
+        "2023-07-24",
+        "2023-07-21",
+        "2023-01-19",
+        "2023-01-14"
+      ],
+      "product": "Business USA",
+      "license": "Proprietary",
+      "service": "CLT10",
+      "url": ""
+    },
+    {
+      "ids": [
+        860654482
+      ],
+      "dates": [
+        "2025-04-04",
+        "2025-04-03",
+        "2025-04-01",
+        "2025-03-27",
+        "2025-03-25",
+        "2025-03-20",
+        "2025-03-18",
+        "2025-03-13",
+        "2025-03-04",
+        "2025-02-27",
+        "2025-02-25",
+        "2025-02-20",
+        "2025-02-13",
+        "2025-01-31",
+        "2025-01-28",
+        "2025-01-24",
+        "2025-01-23",
+        "2025-01-21",
+        "2025-01-16",
+        "2025-01-14",
+        "2025-01-09",
+        "2025-01-02",
+        "2024-12-26",
+        "2024-12-17",
+        "2024-12-12",
+        "2024-12-10",
+        "2024-12-05",
+        "2024-11-28",
+        "2024-11-21",
+        "2024-11-19",
+        "2024-11-12",
+        "2024-10-31",
+        "2024-10-24",
+        "2024-10-22",
+        "2024-10-17",
+        "2024-10-15",
+        "2024-10-10",
+        "2024-10-08",
+        "2024-10-03",
+        "2024-09-24",
+        "2024-09-19",
+        "2024-09-12",
+        "2024-09-03",
+        "2024-08-22",
+        "2024-08-20",
+        "2024-08-08",
+        "2024-08-01",
+        "2024-07-30",
+        "2024-07-25",
+        "2024-07-18",
+        "2024-07-04",
+        "2024-06-25",
+        "2024-06-20",
+        "2024-06-18",
+        "2024-05-16",
+        "2024-05-09",
+        "2024-05-02",
+        "2024-04-25",
+        "2024-04-18",
+        "2024-04-02",
+        "2024-03-28",
+        "2024-03-26",
+        "2024-01-08",
+        "2023-12-12",
+        "2023-08-03",
+        "2023-07-27",
+        "2023-07-13",
+        "2023-07-06",
+        "2023-06-29",
+        "2023-06-22",
+        "2023-06-15",
+        "2023-06-01",
+        "2023-05-25",
+        "2023-05-18",
+        "2023-05-04",
+        "2023-05-02",
+        "2023-04-27",
+        "2023-04-20",
+        "2023-04-19",
+        "2023-04-13",
+        "2023-04-06",
+        "2023-03-31",
+        "2023-03-30",
+        "2023-03-23",
+        "2023-03-09",
+        "2023-02-20",
+        "2023-02-16",
+        "2023-01-31",
+        "2023-01-26",
+        "2023-01-19",
+        "2023-01-12",
+        "2022-12-29",
+        "2022-12-22",
+        "2022-12-01",
+        "2022-07-28",
+        "2022-06-09",
+        "2022-05-27",
+        "2022-05-12",
+        "2022-04-07",
+        "2022-04-06",
+        "2022-04-02",
+        "2022-03-23"
+      ],
+      "product": "Uspto Open Data",
+      "license": "Open",
+      "service": "United States Patent and Trademark Office",
+      "url": ""
+    },
+    {
+      "ids": [
+        860654482
+      ],
+      "dates": [
+        "2025-01-03"
+      ],
+      "product": "Coface Bankruptcy Data",
+      "license": "Proprietary",
+      "service": "Coface",
+      "url": ""
+    },
+    {
+      "ids": [
+        860654482
+      ],
+      "dates": [
+        "2024-01-23",
+        "2022-12-05",
+        "2022-12-03"
+      ],
+      "product": "Business Entities",
+      "license": "Open",
+      "service": "Washington State",
+      "url": ""
+    },
+    {
+      "ids": [
+        860654482
+      ],
+      "dates": [
+        "2024-01-03",
+        "2023-12-26",
+        "2023-12-21",
+        "2023-12-20",
+        "2023-12-07",
+        "2023-07-01",
+        "2023-06-30",
+        "2023-05-08",
+        "2022-10-31",
+        "2022-07-13",
+        "2022-02-14",
+        "2021-06-19",
+        "2021-05-24",
+        "2021-05-23",
+        "2021-05-02",
+        "2021-01-20"
+      ],
+      "product": "Internet Sourced",
+      "license": "Public",
+      "service": "Rel8edto",
+      "url": ""
+    },
+    {
+      "ids": [
+        860654482
+      ],
+      "dates": [
+        "2023-11-13",
+        "2023-11-06",
+        "2023-10-30",
+        "2023-10-23",
+        "2023-10-16",
+        "2023-10-09",
+        "2023-10-02",
+        "2023-09-25",
+        "2023-09-11",
+        "2023-09-04",
+        "2023-08-28",
+        "2023-08-21",
+        "2023-08-14",
+        "2023-08-07",
+        "2023-06-12",
+        "2023-05-29",
+        "2023-05-15",
+        "2023-04-24",
+        "2023-02-20",
+        "2023-02-13",
+        "2023-02-06",
+        "2023-01-23",
+        "2023-01-09",
+        "2022-12-12",
+        "2022-12-05",
+        "2022-10-22",
+        "2022-10-15",
+        "2022-10-08",
+        "2022-10-01",
+        "2022-09-24",
+        "2022-09-17",
+        "2022-09-10",
+        "2022-09-03",
+        "2022-08-20",
+        "2022-08-06",
+        "2022-07-23",
+        "2022-07-16",
+        "2022-07-09",
+        "2022-06-11",
+        "2022-06-04",
+        "2022-05-28",
+        "2022-05-14",
+        "2022-05-07",
+        "2022-04-12",
+        "2022-04-05",
+        "2022-03-15",
+        "2022-03-08",
+        "2022-03-03"
+      ],
+      "product": "Business Entities",
+      "license": "Public",
+      "service": "Virginia State",
+      "url": ""
+    },
+    {
+      "ids": [
+        860654482
+      ],
+      "dates": [
+        "2023-11-06",
+        "2023-10-09",
+        "2023-09-04",
+        "2023-08-07",
+        "2023-07-03",
+        "2023-06-05",
+        "2023-04-10",
+        "2023-02-23"
+      ],
+      "product": "Employee Benefits Security Administration Form 5500 Datasets",
+      "license": "Open",
+      "service": "U.S Department of Labor",
+      "url": ""
+    },
+    {
+      "ids": [
+        582887814
+      ],
+      "dates": [
+        "2023-09-28",
+        "2023-06-19",
+        "2023-01-10",
+        "2023-01-08"
+      ],
+      "product": "North American Business",
+      "license": "Proprietary",
+      "service": "CLT1",
+      "url": ""
+    },
+    {
+      "ids": [
+        860654482
+      ],
+      "dates": [
+        "2023-09-22",
+        "2022-06-27",
+        "2022-03-26"
+      ],
+      "product": "USA Business",
+      "license": "Proprietary",
+      "service": "CLT9",
+      "url": ""
+    },
+    {
+      "ids": [
+        860654482
+      ],
+      "dates": [
+        "2023-02-27"
+      ],
+      "product": "Performance Data PERM Program",
+      "license": "Open",
+      "service": "U.S Department of Labor",
+      "url": ""
+    },
+    {
+      "ids": [
+        860654482
+      ],
+      "dates": [
+        "2023-02-14",
+        "2022-01-20",
+        "2022-01-19",
+        "2022-01-05",
+        "2019-10-10",
+        "2018-06-13",
+        "2014-12-31"
+      ],
+      "product": "Business Entities",
+      "license": "Open",
+      "service": "Florida State",
+      "url": ""
+    },
+    {
+      "ids": [
+        860654482
+      ],
+      "dates": [
+        "2022-12-14",
+        "2022-12-12"
+      ],
+      "product": "Business USA",
+      "license": "Proprietary",
+      "service": "CLT10",
+      "url": ""
+    },
+    {
+      "ids": [
+        860654482,
+        173082656
+      ],
+      "dates": [
+        "2022-12-13",
+        "2022-12-11"
+      ],
+      "product": "Business USA",
+      "license": "Proprietary",
+      "service": "CLT10",
+      "url": ""
+    },
+    {
+      "ids": [
+        860654482,
+        163184811
+      ],
+      "dates": [
+        "2022-12-01",
+        "2022-10-23"
+      ],
+      "product": "Entity Management Extracts Public Data Package",
+      "license": "Public",
+      "service": "United States General Services Administration",
+      "url": ""
+    },
+    {
+      "ids": [
+        23350360,
+        860654482,
+        248229885,
+        248238342
+      ],
+      "dates": [
+        "2022-11-23"
+      ],
+      "product": "Business Entities",
+      "license": "Public",
+      "service": "Virginia State",
+      "url": ""
+    },
+    {
+      "ids": [
+        860654482,
+        582887814
+      ],
+      "dates": [
+        "2022-11-16"
+      ],
+      "product": "USA Business 20221116",
+      "license": "Proprietary",
+      "service": "CLT1",
+      "url": ""
+    },
+    {
+      "ids": [
+        860654482
+      ],
+      "dates": [
+        "2022-10-05",
+        "2022-05-18",
+        "2022-04-29"
+      ],
+      "product": "Nys Attorney Registrations",
+      "license": "Open",
+      "service": "New York State",
+      "url": ""
+    },
+    {
+      "ids": [
+        860654482
+      ],
+      "dates": [
+        "2022-09-26"
+      ],
+      "product": "Government Registry",
+      "license": "Public",
+      "service": "Rel8edto",
+      "url": ""
+    },
+    {
+      "ids": [
+        860654482
+      ],
+      "dates": [
+        "2022-08-18",
+        "2022-07-14",
+        "2022-05-12",
+        "2022-04-14",
+        "2022-03-25",
+        "2019-12-12"
+      ],
+      "product": "Award Data Archive",
+      "license": "Public",
+      "service": "USASPENDING.GOV",
+      "url": ""
+    },
+    {
+      "ids": [
+        860654482
+      ],
+      "dates": [
+        "2022-04-12",
+        "2022-04-11",
+        "2022-03-30"
+      ],
+      "product": "Information About Registered Investment Advisers And Exempt Reporting Advisers",
+      "license": "Open",
+      "service": "U.S. Securities and Exchange Commission",
+      "url": ""
+    },
+    {
+      "ids": [
+        860654482,
+        173082656
+      ],
+      "dates": [
+        "2022-04-10"
+      ],
+      "product": "Uspto Open Data",
+      "license": "Open",
+      "service": "United States Patent and Trademark Office",
+      "url": ""
+    },
+    {
+      "ids": [
+        860654482
+      ],
+      "dates": [
+        "2022-04-07"
+      ],
+      "product": "Entity Management Extracts Public Data Package",
+      "license": "Public",
+      "service": "United States General Services Administration",
+      "url": ""
+    },
+    {
+      "ids": [
+        173082656
+      ],
+      "dates": [
+        "2022-04-05"
+      ],
+      "product": "Uspto Open Data",
+      "license": "Open",
+      "service": "United States Patent and Trademark Office",
+      "url": ""
+    },
+    {
+      "ids": [
+        860654482
+      ],
+      "dates": [
+        "2022-03-28"
+      ],
+      "product": "Company Information About Active Broker-dealers",
+      "license": "Open",
+      "service": "U.S. Securities and Exchange Commission",
+      "url": ""
+    },
+    {
+      "ids": [
+        860654482
+      ],
+      "dates": [
+        "2022-03-26"
+      ],
+      "product": "Business 2021 June",
+      "license": "Proprietary",
+      "service": "CLT9",
+      "url": ""
+    },
+    {
+      "ids": [
+        860654482,
+        248229885,
+        248238342
+      ],
+      "dates": [
+        "2022-01-11",
+        "2022-01-06",
+        "2021-12-21"
+      ],
+      "product": "Business Entities",
+      "license": "Public",
+      "service": "Virginia State",
+      "url": ""
+    },
+    {
+      "ids": [
+        860654482
+      ],
+      "dates": [
+        "2022-01-10",
+        "2021-12-06"
+      ],
+      "product": "Business Entities",
+      "license": "Open",
+      "service": "Colorado State",
+      "url": ""
+    },
+    {
+      "ids": [
+        860654482
+      ],
+      "dates": [
+        "2021-12-15"
+      ],
+      "product": "Business Entities",
+      "license": "Open",
+      "service": "New York State",
+      "url": ""
+    },
+    {
+      "ids": [
+        860654482
+      ],
+      "dates": [
+        "2021-11-21",
+        "2021-07-18"
+      ],
+      "product": "Texas Tax-exempt Entities",
+      "license": "Open",
+      "service": "Texas State",
+      "url": ""
+    },
+    {
+      "ids": [
+        860654482
+      ],
+      "dates": [
+        "2021-08-25",
+        "2021-08-09",
+        "2021-08-07",
+        "2021-08-04"
+      ],
+      "product": "rel8ed.to WebToCorp",
+      "license": "Public",
+      "service": "Rel8edto",
+      "url": ""
+    },
+    {
+      "ids": [
+        860654482
+      ],
+      "dates": [
+        "2021-07-20"
+      ],
+      "product": "Motor Carrier Census Information",
+      "license": "Public",
+      "service": "Federal Motor Carrier Safety Administration",
+      "url": ""
+    },
+    {
+      "ids": [
+        860654482
+      ],
+      "dates": [
+        "2021-07-13",
+        "2021-07-12"
+      ],
+      "product": "Dbusa2021",
+      "license": "Proprietary",
+      "service": "CLT5",
+      "url": ""
+    },
+    {
+      "ids": [
+        860654482
+      ],
+      "dates": [
+        "2021-05-05",
+        "2021-04-29"
+      ],
+      "product": "Record Matching",
+      "license": "Open",
+      "service": "Thomson Reuters",
+      "url": ""
+    },
+    {
+      "ids": [
+        860654482,
+        860820996,
+        355831345,
+        860820997,
+        355822683,
+        248238342
+      ],
+      "dates": [
+        "2021-05-03"
+      ],
+      "product": "Internet Sourced",
+      "license": "Public",
+      "service": "Rel8edto",
+      "url": ""
+    },
+    {
+      "ids": [
+        860654482
+      ],
+      "dates": [
+        "2021-04-16"
+      ],
+      "product": "Form 990",
+      "license": "Public",
+      "service": "U.S. Government",
+      "url": ""
+    },
+    {
+      "ids": [
+        173082656
+      ],
+      "dates": [
+        "2021-01-21"
+      ],
+      "product": "Internet Sourced",
+      "license": "Public",
+      "service": "Rel8edto",
+      "url": ""
+    },
+    {
+      "ids": [
+        860654482,
+        163184811
+      ],
+      "dates": [
+        "2021-01-13"
+      ],
+      "product": "System For Award Management (sam) Public Extract - Exclusions",
+      "license": "Open",
+      "service": "United States General Services Administration",
+      "url": ""
+    },
+    {
+      "ids": [
+        860654482,
+        173082656
+      ],
+      "dates": [
+        "2021-01-12",
+        "2020-07-22"
+      ],
+      "product": "Foursquare Business",
+      "license": "Public",
+      "service": "Foursquare",
+      "url": ""
+    },
+    {
+      "ids": [
+        248238342
+      ],
+      "dates": [
+        "2020-12-17"
+      ],
+      "product": "Online Content",
+      "license": "Public",
+      "service": "Internet",
+      "url": ""
+    },
+    {
+      "ids": [
+        582887816,
+        582887814
+      ],
+      "dates": [
+        "2020-12-16",
+        "2020-11-28",
+        "2020-10-12",
+        "2020-07-16",
+        "2020-07-06",
+        "2020-07-02"
+      ],
+      "product": "Api",
+      "license": "Public",
+      "service": "Better Business Bureau",
+      "url": ""
+    },
+    {
+      "ids": [
+        860654482
+      ],
+      "dates": [
+        "2020-10-14"
+      ],
+      "product": "S&p Usa",
+      "license": "Public",
+      "service": "S&P Global Market Intelligence",
+      "url": ""
+    },
+    {
+      "ids": [
+        173082656
+      ],
+      "dates": [
+        "2020-09-30"
+      ],
+      "product": "S&p Usa",
+      "license": "Public",
+      "service": "S&P Global Market Intelligence",
+      "url": ""
+    },
+    {
+      "ids": [
+        860654482
+      ],
+      "dates": [
+        "2020-07-14"
+      ],
+      "product": "Sba Paycheck Protection Program Loan",
+      "license": "Open",
+      "service": "U.S. Government",
+      "url": ""
+    },
+    {
+      "ids": [
+        860654482
+      ],
+      "dates": [
+        "2020-06-16"
+      ],
+      "product": "Company Filings",
+      "license": "Open",
+      "service": "U.S. Securities and Exchange Commission",
+      "url": ""
+    },
+    {
+      "ids": [
+        860654482
+      ],
+      "dates": [
+        "2020-06-04"
+      ],
+      "product": "Automated Lien System (als) Database Listing",
+      "license": "Public",
+      "service": "U.S. Government",
+      "url": ""
+    },
+    {
+      "ids": [
+        860654482
+      ],
+      "dates": [
+        "2020-03-16",
+        "2020-03-15"
+      ],
+      "product": "Exempt Organizations Business Master File Extract",
+      "license": "Open",
+      "service": "IRS",
+      "url": ""
+    },
+    {
+      "ids": [
+        860654482
+      ],
+      "dates": [
+        "2020-02-20",
+        "2020-02-14"
+      ],
+      "product": "Online Content",
+      "license": "Public",
+      "service": "Internet",
+      "url": ""
+    },
+    {
+      "ids": [
+        248238059,
+        860654482,
+        163184811,
+        173082656,
+        248229885,
+        248238342
+      ],
+      "dates": [
+        "2020-02-16"
+      ],
+      "product": "Business Entities",
+      "license": "Public",
+      "service": "Virginia State",
+      "url": ""
+    },
+    {
+      "ids": [
+        860654482,
+        173082656
+      ],
+      "dates": [
+        "2020-02-15"
+      ],
+      "product": "S&p Usa",
+      "license": "Public",
+      "service": "S&P Global Market Intelligence",
+      "url": ""
+    },
+    {
+      "ids": [
+        860654482
+      ],
+      "dates": [
+        "2020-02-12"
+      ],
+      "product": "Virginia Firms Cpa",
+      "license": "Public",
+      "service": "Virginia State",
+      "url": ""
+    },
+    {
+      "ids": [
+        860654482,
+        173082656
+      ],
+      "dates": [
+        "2020-02-10"
+      ],
+      "product": "Virginia Individual Cpa",
+      "license": "Public",
+      "service": "Virginia State",
+      "url": ""
+    },
+    {
+      "ids": [
+        248238059,
+        248229885,
+        248238342
+      ],
+      "dates": [
+        "2020-02-09",
+        "2019-11-17",
+        "2019-11-10",
+        "2019-09-29",
+        "2019-09-11",
+        "2019-09-04",
+        "2019-08-22"
+      ],
+      "product": "Business Entities",
+      "license": "Public",
+      "service": "Virginia State",
+      "url": ""
+    },
+    {
+      "ids": [
+        355828728,
+        860654482,
+        173082656,
+        355831345,
+        355822683,
+        355834218,
+        425652425,
+        425652426,
+        425652427,
+        355775212,
+        355814299,
+        248238342
+      ],
+      "dates": [
+        "2020-02-07"
+      ],
+      "product": "Provider X Database",
+      "license": "Proprietary",
+      "service": "Provider X",
+      "url": ""
+    },
+    {
+      "ids": [
+        860654482,
+        173082656
+      ],
+      "dates": [
+        "2019-11-28",
+        "2019-11-27"
+      ],
+      "product": "Entity Management Extracts Public Data Package",
+      "license": "Public",
+      "service": "United States General Services Administration",
+      "url": ""
+    },
+    {
+      "ids": [
+        860654482
+      ],
+      "dates": [
+        "2019-10-25"
+      ],
+      "product": "Red Hat Existing Partners",
+      "license": "Public",
+      "service": "Red Hat",
+      "url": ""
+    },
+    {
+      "ids": [
+        860654482
+      ],
+      "dates": [
+        "2019-10-24"
+      ],
+      "product": "Aws Partners",
+      "license": "Public",
+      "service": "Amazon",
+      "url": ""
+    },
+    {
+      "ids": [
+        860654482
+      ],
+      "dates": [
+        "2019-10-22",
+        "2019-10-21"
+      ],
+      "product": "Texas Active Franchise Tax Permit Holders",
+      "license": "Open",
+      "service": "Texas State",
+      "url": ""
+    },
+    {
+      "ids": [
+        163184811
+      ],
+      "dates": [
+        "2019-09-24",
+        "2019-09-20"
+      ],
+      "product": "Business Entities",
+      "license": "Open",
+      "service": "Florida State",
+      "url": ""
+    },
+    {
+      "ids": [
+        163184811
+      ],
+      "dates": [
+        "2019-08-19",
+        "2018-06-09"
+      ],
+      "product": "Business Entities",
+      "license": "Open",
+      "service": "New York State",
+      "url": ""
+    },
+    {
+      "ids": [
+        163184811
+      ],
+      "dates": [
+        "2019-07-19"
+      ],
+      "product": "Dc Property Information Verification System",
+      "license": "Public",
+      "service": "District of Columbia Business",
+      "url": ""
+    },
+    {
+      "ids": [
+        173082656
+      ],
+      "dates": [
+        "2019-05-29"
+      ],
+      "product": "Alternative Fueling Stations",
+      "license": "Open",
+      "service": "United States Department of Homeland Security",
+      "url": ""
+    },
+    {
+      "ids": [
+        173082656
+      ],
+      "dates": [
+        "2019-05-27"
+      ],
+      "product": "Ups Facilities",
+      "license": "Open",
+      "service": "United States Department of Homeland Security",
+      "url": ""
+    },
+    {
+      "ids": [
+        860654482,
+        163184811,
+        173082656
+      ],
+      "dates": [
+        "2018-08-24"
+      ],
+      "product": "Business Entities",
+      "license": "Public",
+      "service": "Virginia State",
+      "url": ""
+    },
+    {
+      "ids": [
+        860654482
+      ],
+      "dates": [
+        "2018-08-16"
+      ],
+      "product": "District Of Columbia Business",
+      "license": "Open",
+      "service": "OpenCorporates",
+      "url": ""
+    },
+    {
+      "ids": [
+        163184811
+      ],
+      "dates": [
+        "2018-07-17"
+      ],
+      "product": "Business Entities",
+      "license": "Open",
+      "service": "Colorado State",
+      "url": ""
+    }
+  ],
+  "combinedsources": [
+    {
+      "dates": [
+        "2025-06-17",
+        "2025-06-10",
+        "2025-05-27",
+        "2025-05-20",
+        "2025-05-13",
+        "2025-05-06",
+        "2025-04-29",
+        "2025-04-22",
+        "2025-04-15",
+        "2025-04-08",
+        "2025-03-25",
+        "2025-03-18",
+        "2025-03-11",
+        "2025-02-25",
+        "2025-02-18",
+        "2025-02-11",
+        "2025-02-04",
+        "2025-01-28",
+        "2025-01-21",
+        "2025-01-14",
+        "2025-01-07",
+        "2024-12-31",
+        "2024-12-24",
+        "2024-12-17",
+        "2024-12-10",
+        "2024-12-03",
+        "2024-11-26",
+        "2024-11-19",
+        "2024-11-12",
+        "2024-11-05",
+        "2024-10-29",
+        "2024-10-22",
+        "2024-10-15",
+        "2024-10-08",
+        "2024-10-01",
+        "2024-09-24",
+        "2024-09-17",
+        "2024-09-10",
+        "2024-09-03",
+        "2024-08-27",
+        "2024-08-20",
+        "2024-08-13",
+        "2024-07-30",
+        "2024-07-23",
+        "2024-07-02",
+        "2024-06-25",
+        "2024-05-21",
+        "2024-05-14",
+        "2024-05-07",
+        "2024-04-30",
+        "2024-04-23",
+        "2024-04-16",
+        "2024-04-01",
+        "2024-03-18",
+        "2024-03-04",
+        "2024-02-19",
+        "2024-02-06",
+        "2022-12-19",
+        "2022-11-21",
+        "2022-04-21"
+      ],
+      "product": "Registered Business Locations - San Francisco",
+      "license": "Open",
+      "service": "City of San Francisco"
+    },
+    {
+      "dates": [
+        "2025-05-20",
+        "2025-04-20",
+        "2025-03-20",
+        "2025-01-16",
+        "2024-12-20",
+        "2023-09-25",
+        "2023-07-24",
+        "2023-07-21",
+        "2023-01-19",
+        "2023-01-14",
+        "2022-12-14",
+        "2022-12-13",
+        "2022-12-12",
+        "2022-12-11"
+      ],
+      "product": "Business USA",
+      "license": "Proprietary",
+      "service": "CLT10"
+    },
+    {
+      "dates": [
+        "2025-04-04",
+        "2025-04-03",
+        "2025-04-01",
+        "2025-03-27",
+        "2025-03-25",
+        "2025-03-20",
+        "2025-03-18",
+        "2025-03-13",
+        "2025-03-04",
+        "2025-02-27",
+        "2025-02-25",
+        "2025-02-20",
+        "2025-02-13",
+        "2025-01-31",
+        "2025-01-28",
+        "2025-01-24",
+        "2025-01-23",
+        "2025-01-21",
+        "2025-01-16",
+        "2025-01-14",
+        "2025-01-09",
+        "2025-01-02",
+        "2024-12-26",
+        "2024-12-17",
+        "2024-12-12",
+        "2024-12-10",
+        "2024-12-05",
+        "2024-11-28",
+        "2024-11-21",
+        "2024-11-19",
+        "2024-11-12",
+        "2024-10-31",
+        "2024-10-24",
+        "2024-10-22",
+        "2024-10-17",
+        "2024-10-15",
+        "2024-10-10",
+        "2024-10-08",
+        "2024-10-03",
+        "2024-09-24",
+        "2024-09-19",
+        "2024-09-12",
+        "2024-09-03",
+        "2024-08-22",
+        "2024-08-20",
+        "2024-08-08",
+        "2024-08-01",
+        "2024-07-30",
+        "2024-07-25",
+        "2024-07-18",
+        "2024-07-04",
+        "2024-06-25",
+        "2024-06-20",
+        "2024-06-18",
+        "2024-05-16",
+        "2024-05-09",
+        "2024-05-02",
+        "2024-04-25",
+        "2024-04-18",
+        "2024-04-02",
+        "2024-03-28",
+        "2024-03-26",
+        "2024-01-08",
+        "2023-12-12",
+        "2023-08-03",
+        "2023-07-27",
+        "2023-07-13",
+        "2023-07-06",
+        "2023-06-29",
+        "2023-06-22",
+        "2023-06-15",
+        "2023-06-01",
+        "2023-05-25",
+        "2023-05-18",
+        "2023-05-04",
+        "2023-05-02",
+        "2023-04-27",
+        "2023-04-20",
+        "2023-04-19",
+        "2023-04-13",
+        "2023-04-06",
+        "2023-03-31",
+        "2023-03-30",
+        "2023-03-23",
+        "2023-03-09",
+        "2023-02-20",
+        "2023-02-16",
+        "2023-01-31",
+        "2023-01-26",
+        "2023-01-19",
+        "2023-01-12",
+        "2022-12-29",
+        "2022-12-22",
+        "2022-12-01",
+        "2022-07-28",
+        "2022-06-09",
+        "2022-05-27",
+        "2022-05-12",
+        "2022-04-10",
+        "2022-04-07",
+        "2022-04-06",
+        "2022-04-05",
+        "2022-04-02",
+        "2022-03-23"
+      ],
+      "product": "Uspto Open Data",
+      "license": "Open",
+      "service": "United States Patent and Trademark Office"
+    },
+    {
+      "dates": [
+        "2025-01-03"
+      ],
+      "product": "Coface Bankruptcy Data",
+      "license": "Proprietary",
+      "service": "Coface"
+    },
+    {
+      "dates": [
+        "2024-01-23",
+        "2023-11-13",
+        "2023-11-06",
+        "2023-10-30",
+        "2023-10-23",
+        "2023-10-16",
+        "2023-10-09",
+        "2023-10-02",
+        "2023-09-25",
+        "2023-09-11",
+        "2023-09-04",
+        "2023-08-28",
+        "2023-08-21",
+        "2023-08-14",
+        "2023-08-07",
+        "2023-06-12",
+        "2023-05-29",
+        "2023-05-15",
+        "2023-04-24",
+        "2023-02-20",
+        "2023-02-14",
+        "2023-02-13",
+        "2023-02-06",
+        "2023-01-23",
+        "2023-01-09",
+        "2022-12-12",
+        "2022-12-05",
+        "2022-12-03",
+        "2022-11-23",
+        "2022-10-22",
+        "2022-10-15",
+        "2022-10-08",
+        "2022-10-01",
+        "2022-09-24",
+        "2022-09-17",
+        "2022-09-10",
+        "2022-09-03",
+        "2022-08-20",
+        "2022-08-06",
+        "2022-07-23",
+        "2022-07-16",
+        "2022-07-09",
+        "2022-06-11",
+        "2022-06-04",
+        "2022-05-28",
+        "2022-05-14",
+        "2022-05-07",
+        "2022-04-12",
+        "2022-04-05",
+        "2022-03-15",
+        "2022-03-08",
+        "2022-03-03",
+        "2022-01-20",
+        "2022-01-19",
+        "2022-01-11",
+        "2022-01-10",
+        "2022-01-06",
+        "2022-01-05",
+        "2021-12-21",
+        "2021-12-15",
+        "2021-12-06",
+        "2020-02-16",
+        "2020-02-09",
+        "2019-11-17",
+        "2019-11-10",
+        "2019-10-10",
+        "2019-09-29",
+        "2019-09-24",
+        "2019-09-20",
+        "2019-09-11",
+        "2019-09-04",
+        "2019-08-22",
+        "2019-08-19",
+        "2018-08-24",
+        "2018-07-17",
+        "2018-06-13",
+        "2018-06-09",
+        "2014-12-31"
+      ],
+      "product": "Business Entities",
+      "license": "Open",
+      "service": "Washington State"
+    },
+    {
+      "dates": [
+        "2024-01-03",
+        "2023-12-26",
+        "2023-12-21",
+        "2023-12-20",
+        "2023-12-07",
+        "2023-07-01",
+        "2023-06-30",
+        "2023-05-08",
+        "2022-10-31",
+        "2022-07-13",
+        "2022-02-14",
+        "2021-06-19",
+        "2021-05-24",
+        "2021-05-23",
+        "2021-05-03",
+        "2021-05-02",
+        "2021-01-21",
+        "2021-01-20"
+      ],
+      "product": "Internet Sourced",
+      "license": "Public",
+      "service": "Rel8edto"
+    },
+    {
+      "dates": [
+        "2023-11-06",
+        "2023-10-09",
+        "2023-09-04",
+        "2023-08-07",
+        "2023-07-03",
+        "2023-06-05",
+        "2023-04-10",
+        "2023-02-23"
+      ],
+      "product": "Employee Benefits Security Administration Form 5500 Datasets",
+      "license": "Open",
+      "service": "U.S Department of Labor"
+    },
+    {
+      "dates": [
+        "2023-09-28",
+        "2023-06-19",
+        "2023-01-10",
+        "2023-01-08"
+      ],
+      "product": "North American Business",
+      "license": "Proprietary",
+      "service": "CLT1"
+    },
+    {
+      "dates": [
+        "2023-09-22",
+        "2022-06-27",
+        "2022-03-26"
+      ],
+      "product": "USA Business",
+      "license": "Proprietary",
+      "service": "CLT9"
+    },
+    {
+      "dates": [
+        "2023-02-27"
+      ],
+      "product": "Performance Data PERM Program",
+      "license": "Open",
+      "service": "U.S Department of Labor"
+    },
+    {
+      "dates": [
+        "2022-12-01",
+        "2022-10-23",
+        "2022-04-07",
+        "2019-11-28",
+        "2019-11-27"
+      ],
+      "product": "Entity Management Extracts Public Data Package",
+      "license": "Public",
+      "service": "United States General Services Administration"
+    },
+    {
+      "dates": [
+        "2022-11-16"
+      ],
+      "product": "USA Business 20221116",
+      "license": "Proprietary",
+      "service": "CLT1"
+    },
+    {
+      "dates": [
+        "2022-10-05",
+        "2022-05-18",
+        "2022-04-29"
+      ],
+      "product": "Nys Attorney Registrations",
+      "license": "Open",
+      "service": "New York State"
+    },
+    {
+      "dates": [
+        "2022-09-26"
+      ],
+      "product": "Government Registry",
+      "license": "Public",
+      "service": "Rel8edto"
+    },
+    {
+      "dates": [
+        "2022-08-18",
+        "2022-07-14",
+        "2022-05-12",
+        "2022-04-14",
+        "2022-03-25",
+        "2019-12-12"
+      ],
+      "product": "Award Data Archive",
+      "license": "Public",
+      "service": "USASPENDING.GOV"
+    },
+    {
+      "dates": [
+        "2022-04-12",
+        "2022-04-11",
+        "2022-03-30"
+      ],
+      "product": "Information About Registered Investment Advisers And Exempt Reporting Advisers",
+      "license": "Open",
+      "service": "U.S. Securities and Exchange Commission"
+    },
+    {
+      "dates": [
+        "2022-03-28"
+      ],
+      "product": "Company Information About Active Broker-dealers",
+      "license": "Open",
+      "service": "U.S. Securities and Exchange Commission"
+    },
+    {
+      "dates": [
+        "2022-03-26"
+      ],
+      "product": "Business 2021 June",
+      "license": "Proprietary",
+      "service": "CLT9"
+    },
+    {
+      "dates": [
+        "2021-11-21",
+        "2021-07-18"
+      ],
+      "product": "Texas Tax-exempt Entities",
+      "license": "Open",
+      "service": "Texas State"
+    },
+    {
+      "dates": [
+        "2021-08-25",
+        "2021-08-09",
+        "2021-08-07",
+        "2021-08-04"
+      ],
+      "product": "rel8ed.to WebToCorp",
+      "license": "Public",
+      "service": "Rel8edto"
+    },
+    {
+      "dates": [
+        "2021-07-20"
+      ],
+      "product": "Motor Carrier Census Information",
+      "license": "Public",
+      "service": "Federal Motor Carrier Safety Administration"
+    },
+    {
+      "dates": [
+        "2021-07-13",
+        "2021-07-12"
+      ],
+      "product": "Dbusa2021",
+      "license": "Proprietary",
+      "service": "CLT5"
+    },
+    {
+      "dates": [
+        "2021-05-05",
+        "2021-04-29"
+      ],
+      "product": "Record Matching",
+      "license": "Open",
+      "service": "Thomson Reuters"
+    },
+    {
+      "dates": [
+        "2021-04-16"
+      ],
+      "product": "Form 990",
+      "license": "Public",
+      "service": "U.S. Government"
+    },
+    {
+      "dates": [
+        "2021-01-13"
+      ],
+      "product": "System For Award Management (sam) Public Extract - Exclusions",
+      "license": "Open",
+      "service": "United States General Services Administration"
+    },
+    {
+      "dates": [
+        "2021-01-12",
+        "2020-07-22"
+      ],
+      "product": "Foursquare Business",
+      "license": "Public",
+      "service": "Foursquare"
+    },
+    {
+      "dates": [
+        "2020-12-17",
+        "2020-02-20",
+        "2020-02-14"
+      ],
+      "product": "Online Content",
+      "license": "Public",
+      "service": "Internet"
+    },
+    {
+      "dates": [
+        "2020-12-16",
+        "2020-11-28",
+        "2020-10-12",
+        "2020-07-16",
+        "2020-07-06",
+        "2020-07-02"
+      ],
+      "product": "Api",
+      "license": "Public",
+      "service": "Better Business Bureau"
+    },
+    {
+      "dates": [
+        "2020-10-14",
+        "2020-09-30",
+        "2020-02-15"
+      ],
+      "product": "S&p Usa",
+      "license": "Public",
+      "service": "S&P Global Market Intelligence"
+    },
+    {
+      "dates": [
+        "2020-07-14"
+      ],
+      "product": "Sba Paycheck Protection Program Loan",
+      "license": "Open",
+      "service": "U.S. Government"
+    },
+    {
+      "dates": [
+        "2020-06-16"
+      ],
+      "product": "Company Filings",
+      "license": "Open",
+      "service": "U.S. Securities and Exchange Commission"
+    },
+    {
+      "dates": [
+        "2020-06-04"
+      ],
+      "product": "Automated Lien System (als) Database Listing",
+      "license": "Public",
+      "service": "U.S. Government"
+    },
+    {
+      "dates": [
+        "2020-03-16",
+        "2020-03-15"
+      ],
+      "product": "Exempt Organizations Business Master File Extract",
+      "license": "Open",
+      "service": "IRS"
+    },
+    {
+      "dates": [
+        "2020-02-12"
+      ],
+      "product": "Virginia Firms Cpa",
+      "license": "Public",
+      "service": "Virginia State"
+    },
+    {
+      "dates": [
+        "2020-02-10"
+      ],
+      "product": "Virginia Individual Cpa",
+      "license": "Public",
+      "service": "Virginia State"
+    },
+    {
+      "dates": [
+        "2020-02-07"
+      ],
+      "product": "Provider X Database",
+      "license": "Proprietary",
+      "service": "Provider X"
+    },
+    {
+      "dates": [
+        "2019-10-25"
+      ],
+      "product": "Red Hat Existing Partners",
+      "license": "Public",
+      "service": "Red Hat"
+    },
+    {
+      "dates": [
+        "2019-10-24"
+      ],
+      "product": "Aws Partners",
+      "license": "Public",
+      "service": "Amazon"
+    },
+    {
+      "dates": [
+        "2019-10-22",
+        "2019-10-21"
+      ],
+      "product": "Texas Active Franchise Tax Permit Holders",
+      "license": "Open",
+      "service": "Texas State"
+    },
+    {
+      "dates": [
+        "2019-07-19"
+      ],
+      "product": "Dc Property Information Verification System",
+      "license": "Public",
+      "service": "District of Columbia Business"
+    },
+    {
+      "dates": [
+        "2019-05-29"
+      ],
+      "product": "Alternative Fueling Stations",
+      "license": "Open",
+      "service": "United States Department of Homeland Security"
+    },
+    {
+      "dates": [
+        "2019-05-27"
+      ],
+      "product": "Ups Facilities",
+      "license": "Open",
+      "service": "United States Department of Homeland Security"
+    },
+    {
+      "dates": [
+        "2018-08-16"
+      ],
+      "product": "District Of Columbia Business",
+      "license": "Open",
+      "service": "OpenCorporates"
+    }
+  ],
+  "combinedids": 248238342,
+  "relations": [],
+  "owners": [],
+  "generalStatus": "Active",
+  "latestDate": "2020-09-02",
+  "uuid": "a41240f0-0b08-4a08-b45f-6bee818b20a9",
+  "latestSource": {
+    "dates": [
+      "2025-06-17",
+      "2025-06-10",
+      "2025-05-27",
+      "2025-05-20",
+      "2025-05-13",
+      "2025-05-06",
+      "2025-04-29",
+      "2025-04-22",
+      "2025-04-15",
+      "2025-04-08",
+      "2025-03-25",
+      "2025-03-18",
+      "2025-03-11",
+      "2025-02-25",
+      "2025-02-18",
+      "2025-02-11",
+      "2025-02-04",
+      "2025-01-28",
+      "2025-01-21",
+      "2025-01-14",
+      "2025-01-07",
+      "2024-12-31",
+      "2024-12-24",
+      "2024-12-17",
+      "2024-12-10",
+      "2024-12-03",
+      "2024-11-26",
+      "2024-11-19",
+      "2024-11-12",
+      "2024-11-05",
+      "2024-10-29",
+      "2024-10-22",
+      "2024-10-15",
+      "2024-10-08",
+      "2024-10-01",
+      "2024-09-24",
+      "2024-09-17",
+      "2024-09-10",
+      "2024-09-03",
+      "2024-08-27",
+      "2024-08-20",
+      "2024-08-13",
+      "2024-07-30",
+      "2024-07-23",
+      "2024-07-02",
+      "2024-06-25",
+      "2024-05-21",
+      "2024-05-14",
+      "2024-05-07",
+      "2024-04-30",
+      "2024-04-23",
+      "2024-04-16",
+      "2024-04-01",
+      "2024-03-18",
+      "2024-03-04",
+      "2024-02-19",
+      "2024-02-06",
+      "2022-12-19",
+      "2022-11-21",
+      "2022-04-21"
+    ],
+    "product": "Registered Business Locations - San Francisco",
+    "license": "Open",
+    "service": "City of San Francisco"
+  },
+  "reviewTime": {
+    "low": 666063536,
+    "high": 407
+  },
+  "startDate": "2015-01-01"
+}
