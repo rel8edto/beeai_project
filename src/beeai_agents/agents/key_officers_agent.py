@@ -1,4 +1,4 @@
-
+import traceback       
 from collections.abc import AsyncGenerator
 
 
@@ -96,7 +96,12 @@ async def key_officers(
         yield MessagePart(content=summary)
 
     except Exception as exc:
+        tb = traceback.format_exc()
         yield MessagePart(
-            content=f"Sorry, I couldn’t fetch data for “{company_name}”: {exc}"
+            content=(
+                f"Sorry, I couldn’t fetch data for “{company_name}”.\n\n"
+                f"**Error:** {exc}\n\n"
+                f"```traceback\n{tb}```"
         )
+)
    

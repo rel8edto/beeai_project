@@ -1,6 +1,6 @@
 import json
 from collections.abc import AsyncGenerator
-
+import traceback         
 import httpx
 from acp_sdk import MessagePart, Metadata
 from acp_sdk.models import Message
@@ -133,8 +133,16 @@ async def key_addresses(
 
 
     except Exception as exc:
+        tb = traceback.format_exc()
+        # Log internally (prints to container logs / Cloud logging)
+        print("key_addresses error:", tb, flush=True)
+        
         yield MessagePart(
-            content=f"Sorry, I couldn’t fetch data for “{company_name}”: {exc}"
+            content=(
+                f"Sorry, I couldn’t fetch data for “{company_name}”.\n\n"
+                f"**Error:** {exc}\n\n"
+                f"```traceback\n{tb}```"
+        )
         )
         
 
