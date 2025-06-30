@@ -5,7 +5,12 @@ ENV UV_LINK_MODE=copy \
     PIP_DISABLE_PIP_VERSION_CHECK=on \
     PYTHONUNBUFFERED=1 \
     PRODUCTION_MODE=true \
-    PORT=8080
+    PORT=8080 \
+    WATSONX_URL=https://us-south.ml.cloud.ibm.com \
+    WATSONX_APIKEY=wbjku_0Hh4qHFy7etXNqUT5vHs_p_yj2YPGmyUkHv5KE \
+    WATSONX_PROJECT_ID=5b398c1a-4363-4faf-8c47-11e4ec87d24b \
+    OCTAGON_API_KEY=sk_HaMi_e7zbjBar0Rcw_E4Q18M8S0q6SNhGxFwghG0OeVeWx0KSIZ_dSUAEVPsYQp7u60R9xNo_djQXo1gSbldGw
+
 
 # 1️⃣ copy only the lock + metadata first
 WORKDIR /app
