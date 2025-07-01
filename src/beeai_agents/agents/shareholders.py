@@ -3,6 +3,7 @@ import os, json, textwrap
 from collections.abc import AsyncGenerator
 from typing import Any
 
+import traceback       
 # Use the ASYNC version of the OpenAI client for compatibility with the async framework
 from openai import AsyncOpenAI
 from acp_sdk import MessagePart, Metadata
@@ -81,11 +82,15 @@ async def octagon_holdings(
         
 
     except Exception as exc:
-        # 6. Handle potential API errors gracefully.
+        tb = traceback.format_exc()
         yield MessagePart(
-            content=f"Sorry, I couldn’t fetch holdings data for “{raw}” from Octagon: {exc}"
+            content=(
+                f"Sorry, I couldn’t fetch data for “{company_name}”.\n\n"
+                f"**Error:** {exc}\n\n"
+                f"```traceback\n{tb}```"
+            )
         )
-        return
+   
 
      # ── 2. pick current / previous rows --------------------------------------
     current, *_ = rows
