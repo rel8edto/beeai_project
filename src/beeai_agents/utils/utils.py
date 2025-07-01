@@ -1,5 +1,4 @@
-import os
-import httpx
+import os, httpx
 
 from beeai_framework.backend.chat import ChatModel
 from acp_sdk.server import Server
@@ -20,6 +19,7 @@ chat_model = ChatModel.from_name("watsonx:ibm/granite-3-8b-instruct",
              "base_url": WATSONX_URL,
              })
     
+
 # ──────────────────────────────────────────────────────────────────────────────
 # Helper – prettify one address dict → single-line string
 # ──────────────────────────────────────────────────────────────────────────────
@@ -56,6 +56,9 @@ def format_officer(director: dict) -> str:
 # ──────────────────────────────────────────────────────────────────────────────
 # Helper – fetch from PDS
 # ──────────────────────────────────────────────────────────────────────────────
+# 20 s read timeout; 10 s connect timeout
+PDS_TIMEOUT = httpx.Timeout(connect=10.0, read=20.0)
+
 async def fetch_company_data_from_pds(
     company_name: str,
     state: str = "NY",
@@ -73,7 +76,7 @@ async def fetch_company_data_from_pds(
         "Accept": "application/json",
         "Content-Type": "application/json",
     }
-    async with httpx.AsyncClient() as client:
+    async with httpx.AsyncClient(timeout=PDS_TIMEOUT) as client:
         resp = await client.post(url, headers=headers)
         resp.raise_for_status()
         return resp.json()

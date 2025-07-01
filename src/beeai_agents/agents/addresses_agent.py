@@ -10,6 +10,7 @@ from beeai_framework.backend.message import UserMessage
 
 from ..utils.utils import format_addr, is_us, server, chat_model, fetch_company_data_from_pds
 
+
 import logging, sys
 logging.basicConfig(
     stream=sys.stdout, level=logging.INFO,
