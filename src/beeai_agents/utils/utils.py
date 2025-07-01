@@ -1,4 +1,5 @@
 import os, httpx
+from tenacity import retry, wait_exponential, stop_after_attempt, retry_if_exception_type
 
 from beeai_framework.backend.chat import ChatModel
 from acp_sdk.server import Server
@@ -58,7 +59,13 @@ def format_officer(director: dict) -> str:
 # ──────────────────────────────────────────────────────────────────────────────
 # 20 s read timeout; 10 s connect timeout
 PDS_TIMEOUT = httpx.Timeout(connect=10.0, read=20.0)
-
+RETRY_POLICY  = dict(
+    wait      = wait_exponential(multiplier=0.5, max=8),
+    stop      = stop_after_attempt(3),
+    retry     = retry_if_exception_type((httpx.ReadTimeout, httpx.ReadError)),
+    reraise   = True,
+)
+@retry(**RETRY_POLICY)
 async def fetch_company_data_from_pds(
     company_name: str,
     state: str = "NY",
