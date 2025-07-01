@@ -58,7 +58,7 @@ def format_officer(director: dict) -> str:
 # Helper – fetch from PDS
 # ──────────────────────────────────────────────────────────────────────────────
 # 20 s read timeout; 10 s connect timeout
-PDS_TIMEOUT = httpx.Timeout(20.0)
+PDS_TIMEOUT = httpx.Timeout(40.0)
 
 RETRY_POLICY  = dict(
     wait      = wait_exponential(multiplier=0.5, max=8),
