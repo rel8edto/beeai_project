@@ -24,3 +24,7 @@ async def query_endpoint(req: Request):
             chunks.append(part.content)
 
     return {"answer": "".join(chunks)}
+
+@app.post("/")
+async def root():
+    return {"status": "Application is running"}

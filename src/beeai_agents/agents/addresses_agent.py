@@ -28,8 +28,9 @@ async def key_addresses(
     print("===>key_addresses started for===> :", company_name)
 
     try:
+        print("===>fetching company data from PDS===>")
         data = await fetch_company_data_from_pds(company_name)
-        
+        print("===>fetched company data from PDS===>")
         rec = next(
             (r for r in data.get("result", []) if r.get("kind") == "Company"),{},)
         

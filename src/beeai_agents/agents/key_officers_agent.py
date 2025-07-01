@@ -22,8 +22,9 @@ async def key_officers(
     """
     company_name = str(input[-1]).strip()
     try:
+        print("===>fetching company data from PDS===>")
         data = await fetch_company_data_from_pds(company_name)
-
+        print("===>fetched company data from PDS===>")
         rec = next((r for r in data.get("result", []) if r.get("kind") == "Company"), {})
 
         raw_directors = rec.get("directors", [])  # <- every officer record
