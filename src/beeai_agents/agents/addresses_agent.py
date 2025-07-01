@@ -30,6 +30,7 @@ async def key_addresses(
     • Ask the LLM to craft the “Key Addresses” paragraph
     • Stream that paragraph back to the user
     """
+    print("===>key_addresses method started===>")
     company_name = str(input[-1]).strip()
     print("===>key_addresses started for===> :", company_name, flush=True)
 
