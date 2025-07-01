@@ -87,7 +87,7 @@ async def octagon_holdings(
             content=(
                 f"Sorry, I couldn’t fetch data for “{company_name}”.\n\n"
                 f"**Error:** {exc}\n\n"
-                f"```traceback\n{tb}```"
+                f"```traceback\n{tb}\n```"
             )
         )
    
