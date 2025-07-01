@@ -75,7 +75,7 @@ async def fetch_company_data_from_pds(
         "Bearer xeWiXeVqMwAB39wrg/HG4fFFA6bZtkf0vIT8kczVRAbyHqqXHkqTub481r/HvtLqC4",
     )
     url = (
-        "http://10.8.0.70:8453/companies/search?"
+        "https://api.rel8ed.to/companies/search?"
         f"searchType=graphOnly&companyName={company_name}&stateProvince={state}"
     )
     headers = {
