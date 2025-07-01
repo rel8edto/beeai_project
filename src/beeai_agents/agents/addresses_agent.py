@@ -10,6 +10,12 @@ from beeai_framework.backend.message import UserMessage
 
 from ..utils.utils import format_addr, is_us, server, chat_model, fetch_company_data_from_pds
 
+import logging, sys
+logging.basicConfig(
+    stream=sys.stdout, level=logging.INFO,
+    format="%(asctime)s %(levelname)s %(name)s :: %(message)s"
+)
+log = logging.getLogger("key_addresses")
 
 # ──────────────────────────────────────────────────────────────────────────────
 # Bee agent
@@ -25,19 +31,23 @@ async def key_addresses(
     • Stream that paragraph back to the user
     """
     company_name = str(input[-1]).strip()
-    print("===>key_addresses started for===> :", company_name)
+    print("===>key_addresses started for===> :", company_name, flush=True)
 
     try:
-        print("===>fetching company data from PDS===>")
+        
+        print("===>fetching company data from PDS===>", flush=True)
+        log.info("Fetching company data for %s", company_name)
         data = await fetch_company_data_from_pds(company_name)
-        print("===>fetched company data from PDS===>")
+        print("===>fetched company data from PDS===>", flush=True)
+        log.info("Fetched company data for %s", company_name)
         rec = next(
             (r for r in data.get("result", []) if r.get("kind") == "Company"),{},)
-        
-        print("===>rec length===>:", len(rec))
+        log.info("Found company data for %s", company_name)
+        print("===>rec length===>:", len(rec), flush=True)
+        log.info("Company data length: %s", len(rec))
         # print("rec :", rec)
         raw_addrs = rec.get("addresses", [{}])
-        print("===>raw_addrs length===>:", len(raw_addrs))
+        print("===>raw_addrs length===>:", len(raw_addrs), flush=True)
         # ── 1. Harvest usable addresses and deduplicate  ───────────────────────
         clean_pairs: list[tuple[str, dict]] = []          # (pretty_addr , original_dict)
         seen: set[str] = set()                            # case-insensitive key
@@ -55,7 +65,7 @@ async def key_addresses(
             if key not in seen:
                 clean_pairs.append((pretty, a))
                 seen.add(key)
-        print("===>number of clean_pairs===>:", len(clean_pairs))
+        print("===>number of clean_pairs===>:", len(clean_pairs), flush=True)
         if not clean_pairs:
             yield MessagePart(content =f"No addresses found.")
             return
