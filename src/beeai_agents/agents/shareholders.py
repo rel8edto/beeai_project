@@ -71,6 +71,7 @@ async def octagon_holdings(
     · Resolves a ticker, fetches Octagon 13-F holdings, and streams a
       **Key Shareholders** paragraph. Gracefully exits for private firms.
     """
+    print("=============octagon_holdings agent has started=============>")
     company = str(input[-1]).strip()
     if not company:
         yield MessagePart(content="Please provide a company name or ticker symbol.")
