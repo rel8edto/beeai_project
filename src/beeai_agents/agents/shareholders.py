@@ -1,102 +1,109 @@
-# --- Required imports ---
-import os, json, textwrap
+# shareholders.py  – Octagon holdings agent
+import os, json, re, textwrap, traceback
 from collections.abc import AsyncGenerator
+from pathlib import Path
 from typing import Any
 
-import traceback       
-# Use the ASYNC version of the OpenAI client for compatibility with the async framework
 from openai import AsyncOpenAI
 from acp_sdk import MessagePart, Metadata
 from acp_sdk.models import Message
 from acp_sdk.server import Context, RunYield, RunYieldResume
 from beeai_framework.backend.message import UserMessage
 
-# Assuming 'server' is defined in your utils, as in your original code
 from ..utils.utils import server, chat_model
-from pathlib import Path
 from dotenv import load_dotenv, find_dotenv
 
-ROOT = Path(__file__).resolve().parents[3] 
-print("ROOT 3====>", ROOT)
-# load_dotenv(ROOT / "./env")
+# ─── ENV / CLIENTS ───────────────────────────────────────────────────────
 load_dotenv(find_dotenv())
-
 OCTAGON_API_KEY = os.getenv("OCTAGON_API_KEY")
 
-# Initialize the ASYNC client to work with your 'async def' agent.
 octagon_client = AsyncOpenAI(
     api_key=OCTAGON_API_KEY,
-    base_url="https://api-gateway.octagonagents.com/v1")
+    base_url="https://api-gateway.octagonagents.com/v1",
+)
 
-print("octagon_client ===>", octagon_client)
-
+# quick alias map
 NAME_TO_TICKER = {
     "google": "GOOG", "alphabet": "GOOG",
     "microsoft": "MSFT", "tesla": "TSLA",
     "apple": "AAPL",   "facebook": "META",
 }
 
+# ─── HELPERS ─────────────────────────────────────────────────────────────
 def fmt(n: int | float | None) -> str:
-    """Pretty-print large numbers."""
     if n is None: return "n/a"
     if abs(n) >= 1_000_000_000: return f"{n/1_000_000_000:.1f} B"
     if abs(n) >= 1_000_000:     return f"{n/1_000_000:.1f} M"
     return f"{n:,}"
 
-# --- The New Agent Implementation ---
+async def lookup_ticker(company: str) -> str | None:
+    """
+    Resolve `company` to its primary stock symbol, or return None for
+    private / unknown firms.
+    """
+    # 1️⃣  hard-coded aliases
+    if company.lower() in NAME_TO_TICKER:
+        return NAME_TO_TICKER[company.lower()]
+
+    # 2️⃣  ask Octagon’s symbol-lookup agent
+    query = (f"Return ONLY the primary stock-ticker symbol for the company "
+             f"named '{company}'. If it is not publicly traded, reply 'PRIVATE'.")
+    try:
+        resp = await octagon_client.responses.create(
+            model="octagon-stock-data-agent",
+            input=query,
+        )
+        symbol = "".join(p.text for p in resp.output[0].content).strip().upper()
+        if symbol and symbol not in {"PRIVATE", "N/A"}:
+            return symbol
+    except Exception:
+        pass  # network / quota / etc.
+
+    return None
+
+# ─── AGENT ───────────────────────────────────────────────────────────────
 @server.agent(name="octagon_holdings", metadata=Metadata(ui={"type": "hands-off"}))
 async def octagon_holdings(
     input: list[Message],
     context: Context,
 ) -> AsyncGenerator[RunYield, RunYieldResume]:
     """
-    • Pulls institutional holdings data for a company using the Octagon Holdings Agent.
-    • Formats the response, including sources, and streams it back to the user.
+    · Resolves a ticker, fetches Octagon 13-F holdings, and streams a
+      **Key Shareholders** paragraph. Gracefully exits for private firms.
     """
-    # 1. Get the company name or ticker from the user's last message.
-   
-    raw = str(input[-1]).strip()
-    company_name= raw
-    if not raw:
-        yield MessagePart("Please provide a company name or ticker symbol.")
+    company = str(input[-1]).strip()
+    if not company:
+        yield MessagePart(content="Please provide a company name or ticker symbol.")
         return
 
-    ticker = NAME_TO_TICKER.get(raw.lower(), raw.upper())
+    # ── 1. ticker resolution ──────────────────────────────────────────
+    ticker = await lookup_ticker(company)
+    if ticker is None:
+        yield MessagePart(content=f"🔎 {company}: company isn’t publicly listed.")
+        return
 
-    hist_q, curr_q = "2024-09-30", "2024-12-31"
-    oct_query = (
-        f"Get a summary of institutional positions for {ticker} "
-        f"for Q4 2024 (current) and Q3 2024 (previous)."
-    )
-    
+    # ── 2. query holdings agent ───────────────────────────────────────
+    oct_query = (f"Get a summary of institutional positions for {ticker} "
+                 f"for Q4 2024 (current) and Q3 2024 (previous). Respond in JSON.")
     try:
-        # 3. Call the Octagon API using the async client.
-        response = await octagon_client.responses.create(
+        resp = await octagon_client.responses.create(
             model="octagon-holdings-agent",
-            input=oct_query
+            input=oct_query,
         )
-        
-       # assistant-content → plain JSON string
-        txt = "".join(part.text for part in response.output[0].content).strip()
-        rows = json.loads(txt)
-        
-
-    except Exception as exc:
-        tb = traceback.format_exc()
+        raw = "".join(p.text for p in resp.output[0].content).strip()
+        rows = json.loads(raw)
+    except (json.JSONDecodeError, Exception):
         yield MessagePart(
-            content=(
-                f"Sorry, I couldn’t fetch data for “{company_name}”.\n\n"
-                f"**Error:** {exc}\n\n"
-                f"```traceback\n{tb}\n```"
-            )
+            content=(f"⚠️  No 13-F data available for **{ticker}** "
+                     "(possible IPO or thin coverage).")
         )
-   
+        return
 
-     # ── 2. pick current / previous rows --------------------------------------
+    # ── 3. pick current / previous rows ───────────────────────────────
     current, *_ = rows
-    previous = next((r for r in rows if r["date"] == hist_q), None)
+    previous = next((r for r in rows if r["date"] == "2024-09-30"), None)
 
-    # ── 3. build bullet list for the LLM -------------------------------------
+    # ── 4. bulletise for the LLM ──────────────────────────────────────
     bullets = [
         f"Quarter end date: {current['date']}",
         f"Reporting institutions: {fmt(current['investorsHolding'])}"
@@ -110,9 +117,8 @@ async def octagon_holdings(
         f"Positions closed: {fmt(current['closedPositions'])}",
         f"Put / call ratio: {current['putCallRatio']:.2f}",
     ]
-    
-    # ── 4. craft prompt & ask your chat model --------------------------------
-    system_guard = textwrap.dedent(f"""
+
+    system_guard = textwrap.dedent("""
         You are writing the **Key Shareholders** paragraph for an
         equity-research report.
 
@@ -123,9 +129,7 @@ async def octagon_holdings(
     """).strip()
 
     prompt = system_guard + "\n\n### Data:\n" + "\n".join(f"• {b}" for b in bullets)
-    
-    
-    llm_resp = await chat_model.create(messages=[UserMessage(prompt)])   # ← as requested
+    llm_resp = await chat_model.create(messages=[UserMessage(prompt)])
     summary  = llm_resp.get_text_content()
 
-    yield MessagePart(content = summary)
+    yield MessagePart(content=summary)
