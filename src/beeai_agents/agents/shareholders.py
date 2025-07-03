@@ -45,7 +45,7 @@ async def lookup_ticker(company: str) -> str | None:
     if company.lower() in NAME_TO_TICKER:
         return NAME_TO_TICKER[company.lower()]
 
-    # 2️⃣  ask Octagon’s symbol-lookup agent
+    # 2️⃣  ask Octagon's symbol-lookup agent
     query = (f"Return ONLY the primary stock-ticker symbol for the company "
              f"named '{company}'. If it is not publicly traded, reply 'PRIVATE'.")
     try:
@@ -80,12 +80,13 @@ async def octagon_holdings(
     # ── 1. ticker resolution ──────────────────────────────────────────
     ticker = await lookup_ticker(company)
     if ticker is None:
-        yield MessagePart(content=f"🔎 {company}: company isn’t publicly listed.")
+        yield MessagePart(content=f"🔎 {company}: company isn't publicly listed.")
         return
 
     # ── 2. query holdings agent ───────────────────────────────────────
     oct_query = (f"Get a summary of institutional positions for {ticker} "
                  f"for Q4 2024 (current) and Q3 2024 (previous). Respond in JSON.")
+    rows =[]
     try:
         resp = await octagon_client.responses.create(
             model="octagon-holdings-agent",
@@ -93,7 +94,10 @@ async def octagon_holdings(
         )
         raw = "".join(p.text for p in resp.output[0].content).strip()
         rows = json.loads(raw)
-    except (json.JSONDecodeError, Exception):
+    except (json.JSONDecodeError, Exception) as e:
+        traceback.print_exc()
+        
+    if not rows:
         yield MessagePart(
             content=(f"⚠️  No 13-F data available for **{ticker}** "
                      "(possible IPO or thin coverage).")
