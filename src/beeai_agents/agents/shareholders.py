@@ -94,9 +94,12 @@ async def octagon_holdings(
         )
         raw = "".join(p.text for p in resp.output[0].content).strip()
         rows = json.loads(raw)
-    except (json.JSONDecodeError, Exception) as e:
+    except json.JSONDecodeError:
+        pass
+    except Exception as e:
+        # Network/auth/quota issues. Log and keep `rows=[]`
         traceback.print_exc()
-        
+    
     if not rows:
         yield MessagePart(
             content=(f"⚠️  No 13-F data available for **{ticker}** "
